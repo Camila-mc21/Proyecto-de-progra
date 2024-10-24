@@ -39,7 +39,7 @@ public:
 		{
 			system("cls");
 			cout << "================================================================" << endl;
-			cout << "=================BIENVENIDOS/BIENVENIDAS========================" << endl;
+			cout << "=======================BIENVENID@S==============================" << endl;
 			cout << "=================CLINICA SAN QUANTUM CODE=======================" << endl;
 			cout << "======================MENU PRINCIPAL============================" << endl;
 			cout << "================================================================" << endl;
@@ -49,7 +49,7 @@ public:
 			cout << "4-Gestion de citas: " << endl;
 			cout << "5-Salir" << endl;
 			cout << "================================================================" << endl;
-			cout << "Ingrese su opcion: ";
+			cout << "Ingrese una opcion: ";
 			cin >> opcionClinica;
 
 			switch (opcionClinica)
@@ -64,7 +64,7 @@ public:
 
 			case 2:
 			{
-				contenedorMedicos.MenuMedicos();
+				contenedorMedicos.menuMedicos();
 				system("pause");
 				break;
 			}
@@ -78,6 +78,7 @@ public:
 
 			case 4:
 			{
+				contenedorCitas.menuCitas();
 				system("pause");
 				break;
 			}
@@ -100,7 +101,7 @@ public:
 						salir = true;
 						cout << "¡Gracias por usar nuestra clinica!" << endl;
 						cout << "Estamos ubicados en: Nicoya, Guanacaste " << endl;
-						cout << "Nuestro correo es: santaquantumcode@hotmail.com" << endl;
+						cout << "Nuestro correo es: clinicasanquantumcode@hotmail.com" << endl;
 						cout << "Recordar que brindamos nuestros servicios de: Medicina General, Odontologia, Nutricion, Pediadria, Psicologia" << endl;
 						cout << "Nuestro numero telefonico es: 26855314" << endl;
 						cout << "¡Clinica San Quantum Code le agradace por confiar en nosotros! " << endl;
